@@ -7,7 +7,7 @@ import './index.css';
 
 const Header = ({ name, title, date }) => (
   <header>
-    <Link to="/slide1">
+    <Link to="/1">
       {title}
     </Link>
     <time>{date}</time>
