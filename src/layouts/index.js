@@ -31,6 +31,7 @@ class TemplateWrapper extends Component {
     );
 
     if (now) {
+
       if (keyCode === PREV && now === 1) {
         return false;
       } else if (keyCode === NEXT && now === slides.length) {

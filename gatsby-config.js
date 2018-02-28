@@ -8,18 +8,27 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     {
+      resolve: `gatsby-plugin-bugherd`,
+      options: {
+        key: `l2a8wvantlla2jdji5x2za`,
+  
+        // whether to include the snippet in production. Defaults to false
+        showInProduction: true
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-smartypants`]
       }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `slides`,
-        path: `${__dirname}/src/pages/`
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `slides`,
+    //     path: `${__dirname}/src/pages/`
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
