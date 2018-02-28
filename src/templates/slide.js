@@ -3,8 +3,10 @@ import React from 'react';
 export default ({ data, pathContext, transition }) => (
   <div
     style={transition && transition.style}
-    dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
-  />
+  >
+    <h1 dangerouslySetInnerHTML={{ __html: data.wordpressPost.title}} />
+    <div dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }} />
+  </div>
 );
 
 export const pageQuery = graphql`

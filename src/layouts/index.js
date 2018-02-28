@@ -16,7 +16,8 @@ const Header = ({ name, title, date }) => (
 
 class TemplateWrapper extends Component {
   navigate = ({ keyCode }) => {
-    const now = parseInt(location.pathname.substr(1));
+    const thispage = location.pathname.substr(1)
+    const now = parseInt(thispage.slice(-2));
     const NEXT = 39;
     const PREV = 37;
 
