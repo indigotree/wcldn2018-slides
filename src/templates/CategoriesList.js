@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 function CategoriesList(props) {
       return ( 
-      <ul>
+      <ul className="categories">
       { props.categories.map(item =>
         <li>
             { item.name }

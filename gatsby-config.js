@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    name: `Fabian Schultz`,
-    title: `Gatsby Deck`,
-    date: `November 23, 2017`
+    name: `Benjamin Read`,
+    title: `How We're Using WordPress as a Headless CMS`,
+    date: `April 14, 2018`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

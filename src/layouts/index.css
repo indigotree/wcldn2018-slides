@@ -1,7 +1,16 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma");
+}
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:800');
+
 :root {
   --bg: #fdfdfd;
-  --meta: #888;
-  --accent: #3178cd;
+  --meta: #ddd;
+  --main: #25215f;
+  --accent: #008ccf;
   --text: black;
   --base: 1.5rem;
 }
@@ -18,9 +27,8 @@
 
 body,
 html {
-  font-family: BlinkMacSystemFont;
+  font-family: system;
   font-size: var(--base);
-  -webkit-font-smoothing: antialiased;
   font-feature-settings: 'calt', 'liga', 'hist', 'onum', 'pnum';
 
   overflow: auto;
@@ -33,7 +41,14 @@ html {
   color: var(--text);
   background-color: var(--bg);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Alegreya SC', serif;
+}
 #slide {
   display: flex;
   overflow: auto;
@@ -41,121 +56,26 @@ html {
   align-items: center;
 
   width: 100vw;
-  height: 100vh;
-
-  text-align: center;
+  height: 95vh;
+  background: var(--accent);
 }
 
 a {
   color: var(--text);
-
   text-decoration-skip: ink;
 }
-
-blockquote {
-  font-size: 120%;
-  font-weight: bold;
-
-  width: 50vw;
-
-  text-align: left;
+ul.categories {
+  list-style-type: none;
+  padding-left: 0;
+  color: var(--meta);
 }
-
-@media (max-width: 900px) {
-  blockquote {
-    width: 90vw;
-  }
-}
-
-blockquote div::before {
-  content: '\201C';
-}
-
-blockquote div::after {
-  content: '\201D';
-}
-
-cite {
-  font-size: 80%;
-  font-weight: normal;
-  font-style: normal;
-
-  display: block;
-
-  margin-top: 2rem;
-}
-
-cite::before {
-  content: '\2014\00a0';
-}
-
-pre {
-  font-size: 70%;
-
-  display: inline-block;
-  overflow-x: scroll;
-
-  margin: 2rem 0;
-
-  text-align: left;
-
-  color: var(--accent);
-}
-
-code {
-  font-family: menlo, monospace;
-  font-size: 90%;
-}
-
-a:hover {
-  color: var(--accent);
-}
-
-h1 {
-  font-size: 200%;
-
-  margin-bottom: 0.5rem;
-}
-
-h2 {
-  font-size: 120%;
-
-  margin-bottom: 0.5rem;
-}
-
-p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 header {
-  font-size: 50%;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 100%;
-  padding: 20px;
-
-  user-select: none;
+  padding-top: 0.25em;
+  padding-left: 0.25em;
+  font-size: calc(var(--base) - 30% );
+  height: 5vh;
+  color: var(--main);
 }
-
-header a,
-time {
-  text-decoration: none;
-
-  color: var(--meta);
-}
-
-header a:hover {
-  color: var(--meta);
-}
-
-header span {
-  color: var(--text);
+header time {
+  padding-left: 0.5em;
 }
