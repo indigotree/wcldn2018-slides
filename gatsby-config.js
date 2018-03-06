@@ -80,10 +80,10 @@ module.exports = {
         // It can help you debug specific API Endpoints problems
         verboseOutput: false,
         // Search and Replace Urls across WordPress content
-        // searchAndReplaceContentUrls: {
-        //   sourceUrl: "https://source-url.com",
-        //   replacementUrl: "https://replacement-url.com",
-        // },
+        searchAndReplaceContentUrls: {
+          sourceUrl: "https://wcldn2018talk.wpengine.com",
+          replacementUrl: "https://wcldn2018wordpressheadless.netlify.com",
+        },
       },
     }, 
   ]
