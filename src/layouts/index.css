@@ -8,10 +8,10 @@
 
 :root {
   --bg: #fdfdfd;
-  --meta: #ddd;
+  --meta: #fdb813;
   --main: #25215f;
   --accent: #25215f;
-  --text:  #fdb813;
+  --text:  #333;
   --base: 1.5rem;
 }
 
@@ -47,7 +47,7 @@ h4,
 h5,
 h6 {
   font-family: lexia, 'Lucida Bright', serif;
-  color: white;
+  color: var(--main);
 }
 h1 {
   margin-top: 0rem;
@@ -61,7 +61,7 @@ h1 {
 
   width: 100vw;
   height: 95vh;
-  background: var(--accent);
+  background: white;
 }
 
 a {
@@ -71,7 +71,7 @@ a {
 ul.categories {
   list-style-type: none;
   padding-left: 0;
-  color: var(--meta);
+  color: var(--text);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -80,10 +80,11 @@ header {
   padding-left: 0.25rem;
   font-size: calc(var(--base) - 30% );
   height: 5vh;
-  color: var(--main);
+  color: white;
+  background: var(--main);
 }
 header a {
-  color: var(--main);
+  color: white;
 }
 header time {
   padding-left: 0.5rem;

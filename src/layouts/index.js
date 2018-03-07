@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link, { navigateTo } from 'gatsby-link';
 import Helmet from 'react-helmet';
-
+import WebFont from 'webfontloader';
 import './index.css';
 
 const Header = ({ name, title, date }) => (
@@ -15,6 +15,7 @@ const Header = ({ name, title, date }) => (
 );
 
 class TemplateWrapper extends Component {
+
   navigate = ({ keyCode }) => {
     const thispage = location.pathname.substr(1)
     const now = parseInt(thispage.slice(-2));
@@ -47,6 +48,16 @@ class TemplateWrapper extends Component {
 
   componentDidMount() {
     document.addEventListener('keydown', this.navigate);
+
+      WebFont.load({
+        typekit: {
+          id: 'iwo2mai'
+        },
+        google: {
+          families: ['Lato']
+        }
+      });
+    
   }
 
   componentWillUnmount() {
