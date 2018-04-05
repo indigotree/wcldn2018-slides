@@ -4,6 +4,7 @@ import Link, { navigateTo } from 'gatsby-link';
 import Helmet from 'react-helmet';
 import WebFont from 'webfontloader';
 import './index.css';
+import logo from './logo.svg';
 
 const Header = ({ name, title, date }) => (
   <header>
@@ -78,6 +79,7 @@ class TemplateWrapper extends Component {
           title={data.site.siteMetadata.title}
           date={data.site.siteMetadata.date}
         />
+        <img id="logo" src={logo}/> 
         <div id="slide">{children()}</div>
       </div>
     );

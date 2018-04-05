@@ -57,10 +57,10 @@ module.exports = {
         hostingWPCOM: false,
         useACF: true,
         // Search and Replace Urls across WordPress content
-        searchAndReplaceContentUrls: {
-          sourceUrl: "https://wcldn2018talk.wpengine.com",
-          replacementUrl: "https://wpheadless.indigotree.co.uk",
-        },
+        // searchAndReplaceContentUrls: {
+        //   sourceUrl: "https://wcldn2018talk.wpengine.com",
+        //   replacementUrl: "https://wpheadless.indigotree.co.uk",
+        // },
       },
     }, 
   ]
