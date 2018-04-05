@@ -87,10 +87,10 @@ header time {
 #slide {
   display: flex;
   overflow: auto;
-  padding-top: calc(var(--base) * 3);
-  padding-left: calc(var(--base) * 3);
+  padding-top: calc(var(--base) * 2);
+  padding-left: calc(var(--base) * 2);
 
-  width: 100vw;
+  width: 95vw;
   height: 95vh;
   background: white;
 }
