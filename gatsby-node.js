@@ -22,7 +22,7 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
   });
 };
 
-// Create slides from Markdown.
+// Create slides from WordPress.
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
   const blogPostTemplate = path.resolve(`src/templates/slide.js`);

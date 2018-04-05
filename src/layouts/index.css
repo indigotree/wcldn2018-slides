@@ -48,6 +48,9 @@ h6 {
   font-family: lexia, 'Lucida Bright', serif;
   color: var(--main);
 }
+p > img {
+  margin-top: -1em;
+}
 h1 {
   margin-top: 0rem;
   margin-bottom: 0.4rem;
@@ -71,7 +74,7 @@ header {
   padding-top: 0.25rem;
   padding-left: 0.25rem;
   font-size: calc(var(--base) - 30% );
-  height: 5vh;
+  height: 50px;
   color: white;
   background: var(--main);
 }
