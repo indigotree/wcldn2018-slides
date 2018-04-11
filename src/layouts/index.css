@@ -95,10 +95,16 @@ header time {
   background: white;
 }
 #logo {
-  position: absolute;
-  top: 5px;
-  right: 30px;
-  width: 120px;
+  display: none;
+}
+@media (min-width: 768px) {
+  #logo {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 120px;
+  }
 }
 .sr-only {
   position: absolute;
