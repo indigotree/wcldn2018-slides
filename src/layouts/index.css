@@ -100,3 +100,36 @@ header time {
   right: 30px;
   width: 120px;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+.link {
+  padding: 5px 15px;
+  background: rgba(0,0,0,0.5);
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+.link:hover,
+.link:active,
+.link:focus {
+  background: black;
+  color: white;
+}
+.link.prev {
+  float: left;
+}
+.link.next {
+  float: right;
+}

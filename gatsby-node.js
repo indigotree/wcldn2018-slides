@@ -1,5 +1,5 @@
 const path = require('path');
- const slash = require("slash");
+
 // Implement the Gatsby API “onCreatePage”. This is
 // called after every page is created.
 exports.onCreatePage = ({ page, boundActionCreators }) => {
@@ -24,6 +24,7 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
 
 // Create slides from WordPress.
 exports.createPages = ({ boundActionCreators, graphql }) => {
+
   const { createPage } = boundActionCreators;
   const blogPostTemplate = path.resolve(`src/templates/slide.js`);
 
