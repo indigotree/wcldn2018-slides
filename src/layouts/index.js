@@ -65,6 +65,11 @@ class TemplateWrapper extends Component {
     document.removeEventListener('keydown', this.navigate);
   }
 
+  handleButtonClick(event, keyCode) {
+    event.preventDefault;
+    this.navigate({ keyCode });
+  }
+
   render() {
     const { children, data } = this.props;
     return (
@@ -81,6 +86,10 @@ class TemplateWrapper extends Component {
         />
         <img id="logo" src={logo}/> 
         <div id="slide">{children()}</div>
+        <footer>
+          <a className="link next" href="#" onClick={ event => this.handleButtonClick(event, 39) }>&#8250;<span className="sr-only">Next</span></a>
+          <a className="link previous" href="#" onClick={ event => this.handleButtonClick(event, 37) }>&#8249;<span className="sr-only">Previous</span></a>
+        </footer>
       </div>
     );
   }
