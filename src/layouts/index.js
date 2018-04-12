@@ -15,31 +15,6 @@ const Header = ({ name, title, date }) => (
   </header>
 );
 
-class Footer extends React.Component {
-  render () {
-    const thispage = location.pathname.substr(1)
-    const now = parseInt(thispage.slice(-2))
-    return (
-      <footer>
-      <Link
-        className="link prev"
-        to={`/${now - 1}`}
-      >
-        <span className="sr-only">Previous page</span>
-        &#8592;
-      </Link>
-      <Link
-        className="link next"
-        to={`/${now + 1}`}
-      >
-        <span className="sr-only">Next page</span>
-        &#8594;
-      </Link>
-    </footer>
-    )
-  }
-} 
-
 class TemplateWrapper extends Component {
 
   navigate = ({ keyCode }) => {
@@ -104,7 +79,6 @@ class TemplateWrapper extends Component {
           title={data.site.siteMetadata.title}
           date={data.site.siteMetadata.date}
         />
-        <Footer/>
         <img id="logo" src={logo}/> 
         <div id="slide">{children()}</div>
       </div>
