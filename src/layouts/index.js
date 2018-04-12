@@ -66,7 +66,7 @@ class TemplateWrapper extends Component {
   }
 
   handleButtonClick(event, keyCode) {
-    event.preventDefault;
+    event.preventDefault();
     this.navigate({ keyCode });
   }
 
