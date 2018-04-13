@@ -89,8 +89,8 @@ header time {
   overflow: auto;
   padding-top: calc(var(--base) * 2);
   padding-left: calc(var(--base) * 2);
-
   width: 95vw;
+  min-height: 100vh;
   background: white;
 }
 .styledliketext {
