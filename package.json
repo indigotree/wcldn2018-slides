@@ -5,6 +5,7 @@
   "author": "Fabian Schultz <desk@fabianschultz.com>",
   "dependencies": {
     "babel-plugin-include": "^1.2.0",
+    "babel-plugin-styled-components": "^1.5.0",
     "gatsby": "^1.9.192",
     "gatsby-cli": "^1.1.39",
     "gatsby-link": "^1.6.36",
